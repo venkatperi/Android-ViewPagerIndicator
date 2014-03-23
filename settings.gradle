@@ -1,0 +1,6 @@
+rootProject.name = 'parent'
+include ':library'
+include ':sample'
+
+project(':library').projectDir = "$rootDir/library" as File
+project(':sample').projectDir = "$rootDir/sample" as File
